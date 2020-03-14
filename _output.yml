@@ -6,6 +6,8 @@ bookdown::gitbook:
       family: serif
       size: 2
     toc:
+      collapsed: true
+      smooth_scroll: true 
       before: |
         <li><a href="./">Un libro nuevo</a></li>
       after: |
@@ -23,7 +25,6 @@ bookdown::pdf_book:
   pandoc_args: --top-level-division=chapter
   toc_unnumbered: yes
   toc_appendix: yes
-  quote_footer: ["\\VA{", "}{}"]
   highlight_bw: yes
 bookdown::epub_book: default
 

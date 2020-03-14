@@ -1,4 +1,10 @@
 \mainmatter 
-# Literature
 
-\index{Here}Here is a review of existing methods.
+# Derivación
+
+En este capítulo se trata de funciónes\index{funciónes} que cambian de valor al variar el valor de la variable independiente. Al establecer esta relación y medirla presisamente concierne al Cálculo Diferencial. Newton al estudiar dos variables relacionados descubrió estos principios llamados inicialmente _fluxiones_\index{fluxiones} un instrumento matemático hasta hoy significativo en muchas ramas del conocimiento.
+
+Un _incremento_ de una variable de un valor númerico a otro, es la _diferencia_ que se obtiene de restar el primer valor del segundo. Un incremento de una variable $x$ se representa por el simbolo $\Delta x$ leida como "delta de $x$" o delta veces $x$
+
+Evidentemente el incremento\index{incremento} puede ser engativo o positivo de acuerdo a si la variable aumenta o disminuye. 
+

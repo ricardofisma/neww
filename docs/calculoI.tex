@@ -105,9 +105,18 @@
 %\usepackage{showframe}
 \makeindex[columns=2, title=\'Indice ]
 
+\makeatletter
+\renewcommand*{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else
+	\hbox{}%
+	\thispagestyle{empty}%
+	\newpage%
+	\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+
 \usepackage{times}
 %\renewcommand{\rmdefault}{ptm}
-\usepackage[lite,subscriptcorrection,nofontinfo,zswash]{mtpro2}
+%\usepackage[lite,subscriptcorrection,nofontinfo,zswash]{mtpro2}
 
 \usepackage{makeidx}
 \makeindex
@@ -148,8 +157,8 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{prerequisites}{%
-\chapter*{Prerequisites}\label{prerequisites}}
+\hypertarget{ID}{%
+\chapter*{Prerequisites}\label{ID}}
 \addcontentsline{toc}{chapter}{Prerequisites}
 
 This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
@@ -167,30 +176,6 @@ The \textbf{bookdown} package can be installed from CRAN\index{CRAN} or Github:
 Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading \texttt{\#}.
 
 To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
-
-\hypertarget{xelatex}{%
-\section*{XeLaTeX}\label{xelatex}}
-\addcontentsline{toc}{section}{XeLaTeX}
-
-This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
-
-The \textbf{bookdown} package can be installed from CRAN\index{CRAN} or Github:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{)}
-\CommentTok{# or the development version}
-\CommentTok{# devtools::install_github("rstudio/bookdown")}
-\end{Highlighting}
-\end{Shaded}
-
-Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading \texttt{\#}.
-
-To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
-
-\hypertarget{introduccion}{%
-\chapter*{Introduccion}\label{introduccion}}
-\addcontentsline{toc}{chapter}{Introduccion}
 
 \hypertarget{acerca-del-autor}{%
 \chapter*{Acerca del autor}\label{acerca-del-autor}}
@@ -266,90 +251,24 @@ Dirección : & Jr.~Untiveros 452\tabularnewline
   Editor de textos científicos con LaTeX.
 \end{enumerate}
 
-En 2018 se empezo a utilizar github (\url{https://github.com/ricardofisma}), which has grown into a large online community on statistics in China. He initiated the Chinese R conference in 2008, and has been involved in organizing R conferences in China since then. During his PhD training at Iowa State University, he won the Vince Sposito Statistical Computing Award (2011) and the Snedecor Award (2012) in the Department of Statistics.
-
-He occasionally rants on Twitter (\href{mailto:ricardomallqui6@gmail.com}{\nolinkurl{ricardomallqui6@gmail.com}}), and most of the time you can find him on GitHub (\href{mailto:ricardomallqui6@gmail.com}{\nolinkurl{ricardomallqui6@gmail.com}}).
-
-He enjoys spicy food as much as classical Chinese literature.
+En 2018 se empezo a utilizar github (\url{https://github.com/ricardofisma})
 
 \hypertarget{introduction}{%
 \chapter*{Introduction}\label{introduction}}
 \addcontentsline{toc}{chapter}{Introduction}
 
-You can label chapter and section titles using after them, e.g., we can reference. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{methods}.
-
-Figures and tables with captions will be placed in \texttt{figure} and \texttt{table} environments, respectively.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{par}\NormalTok{(}\DataTypeTok{mar =} \KeywordTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, }\FloatTok{.1}\NormalTok{, }\FloatTok{.1}\NormalTok{))}
-\KeywordTok{plot}\NormalTok{(pressure, }\DataTypeTok{type =} \StringTok{'b'}\NormalTok{, }\DataTypeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.8\linewidth]{calculoI_files/figure-latex/nice-fig-1} 
-
-}
-
-\caption{Here is a nice figure!}\label{fig:nice-fig}
-\end{figure}
-
-Reference a figure by its code chunk label with the \texttt{fig:} prefix, e.g., see Figure \ref{fig:nice-fig}. Similarly, you can reference tables generated from \texttt{knitr::kable()}, e.g., see Table \ref{tab:nice-tab}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}
-  \KeywordTok{head}\NormalTok{(iris, }\DecValTok{20}\NormalTok{), }\DataTypeTok{caption =} \StringTok{'Here is a nice table!'}\NormalTok{,}
-  \DataTypeTok{booktabs =} \OtherTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{table}
-
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}[t]{rrrrl}
-\toprule
-Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
-\midrule
-5.1 & 3.5 & 1.4 & 0.2 & setosa\\
-4.9 & 3.0 & 1.4 & 0.2 & setosa\\
-4.7 & 3.2 & 1.3 & 0.2 & setosa\\
-4.6 & 3.1 & 1.5 & 0.2 & setosa\\
-5.0 & 3.6 & 1.4 & 0.2 & setosa\\
-\addlinespace
-5.4 & 3.9 & 1.7 & 0.4 & setosa\\
-4.6 & 3.4 & 1.4 & 0.3 & setosa\\
-5.0 & 3.4 & 1.5 & 0.2 & setosa\\
-4.4 & 2.9 & 1.4 & 0.2 & setosa\\
-4.9 & 3.1 & 1.5 & 0.1 & setosa\\
-\addlinespace
-5.4 & 3.7 & 1.5 & 0.2 & setosa\\
-4.8 & 3.4 & 1.6 & 0.2 & setosa\\
-4.8 & 3.0 & 1.4 & 0.1 & setosa\\
-4.3 & 3.0 & 1.1 & 0.1 & setosa\\
-5.8 & 4.0 & 1.2 & 0.2 & setosa\\
-\addlinespace
-5.7 & 4.4 & 1.5 & 0.4 & setosa\\
-5.4 & 3.9 & 1.3 & 0.4 & setosa\\
-5.1 & 3.5 & 1.4 & 0.3 & setosa\\
-5.7 & 3.8 & 1.7 & 0.3 & setosa\\
-5.1 & 3.8 & 1.5 & 0.3 & setosa\\
-\bottomrule
-\end{tabular}
-\end{table}
-
 You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
 
 \mainmatter
 
-\hypertarget{literature}{%
-\chapter{Literature}\label{literature}}
+\hypertarget{derivaciuxf3n}{%
+\chapter{Derivación}\label{derivaciuxf3n}}
 
-\index{Here}Here is a review of existing methods.
+En este capítulo se trata de funciónes\index{funciónes} que cambian de valor al variar el valor de la variable independiente. Al establecer esta relación y medirla presisamente concierne al Cálculo Diferencial. Newton al estudiar dos variables relacionados descubrió estos principios llamados inicialmente \emph{fluxiones}\index{fluxiones} un instrumento matemático hasta hoy significativo en muchas ramas del conocimiento.
+
+Un \emph{incremento} de una variable de un valor númerico a otro, es la \emph{diferencia} que se obtiene de restar el primer valor del segundo. Un incremento de una variable \(x\) se representa por el simbolo \(\Delta x\) leida como ``delta de \(x\)'' o delta veces \(x\)
+
+Evidentemente el incremento\index{incremento} puede ser engativo o positivo de acuerdo a si la variable aumenta o disminuye.
 
 \hypertarget{methods}{%
 \chapter{Methods}\label{methods}}

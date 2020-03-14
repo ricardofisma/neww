@@ -7,9 +7,18 @@
 %\usepackage{showframe}
 \makeindex[columns=2, title=\'Indice ]
 
+\makeatletter
+\renewcommand*{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else
+	\hbox{}%
+	\thispagestyle{empty}%
+	\newpage%
+	\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+
 \usepackage{times}
 %\renewcommand{\rmdefault}{ptm}
-\usepackage[lite,subscriptcorrection,nofontinfo,zswash]{mtpro2}
+%\usepackage[lite,subscriptcorrection,nofontinfo,zswash]{mtpro2}
 
 \usepackage{makeidx}
 \makeindex
