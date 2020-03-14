@@ -1,9 +1,26 @@
-\usepackage[spanish,es-noquoting]{babel}
+\usepackage[spanish]{babel}
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{makeidx}
 \makeindex
 \usepackage{imakeidx}
-\usepackage{showframe}
+%\usepackage{showframe}
 \makeindex[columns=2, title=\'Indice ]
+
+
+
+\usepackage{makeidx}
+\makeindex
+
+\urlstyle{tt}
+
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
 \frontmatter
+
