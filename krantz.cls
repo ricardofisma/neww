@@ -467,7 +467,7 @@
 \if@pdf
 \else
   \AtBeginDocument{%
-    \@cip{\rule{0pt}{9pt}0-8493-0052-5/00/\$0.00+\$.50}%
+    \@cip{\rule{0pt}{19pt}0-8493-0052-5/00/\$0.00+\$.50}%
       {\copyright\ \ 2001 by CRC Press LLC}}%
 \fi
   \if@titlepage
