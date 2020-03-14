@@ -15,8 +15,16 @@ bookdown::pdf_book:
   includes:
     in_header: preamble.tex
     after_body: after_body.tex
-    before_body: after_body.tex
+    before_body: before_body.tex
   latex_engine: pdflatex
-  citation_package: natbib
   keep_tex: yes
+  citation_package: natbib
+  template: null
+  pandoc_args: --top-level-division=chapter
+  toc_unnumbered: no
+  toc_appendix: yes
+  quote_footer: ["\\VA{", "}{}"]
+  highlight_bw: yes
 bookdown::epub_book: default
+
+
