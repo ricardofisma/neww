@@ -1,4 +1,4 @@
 \mainmatter 
 # Literature
 
-Here is a review of existing methods.
+\index{Here}Here is a review of existing methods.
