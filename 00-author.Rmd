@@ -7,13 +7,11 @@ Los datos consignados son confidenciales
 | Apellidos y Nombres : | MALLQUI BAÑOS, Ricardo Michel |
 |---:|:---|
 | Sexo : | Masculino |
-| Estado civil : | Soltero |
 | Fecha de nacimiento : | 7 de febrero de 1983 |
 | DNI : | 42131225 |
 | Celular : | 966878340 | 
 | Correo : | <ricardomallqui6@gmail.com> |
 | Sitio web : | <https://github.com/ricardofisma> |
-| Dirección : | Jr. Untiveros 452 |
 
 ## Educación Académica {-}
 
