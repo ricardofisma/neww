@@ -167,7 +167,7 @@
 \newcommand\SubsubsectionHeadFont{\fontsize{10}{12}\bfseries\selectfont}
 \newcommand\ParagraphHeadFont{\fontsize{10}{12}\itshape\selectfont}
 \newcommand\SubParagraphHeadFont{\fontsize{10}{12}\itshape\selectfont}
-\newcommand\FMHeadFont{\reset@font\fontsize{18}{20}\slshape\bfseries\selectfont}
+\newcommand\FMHeadFont{\reset@font\fontsize{18}{20}\bfseries\selectfont}
 \newcommand\RunningHeadFont{\fontsize{10}{12}\itshape\selectfont}
 \newcommand\NameFont{\fontsize{10}{12}\itshape\selectfont}
 \newcommand\AffiliationFont{\fontsize{8}{10}\selectfont}

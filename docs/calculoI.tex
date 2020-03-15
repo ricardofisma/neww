@@ -113,9 +113,8 @@
 	\if@twocolumn\hbox{}\newpage\fi\fi\fi}
 \makeatother
 
-
 \usepackage{times}
-%\renewcommand{\rmdefault}{ptm}
+\renewcommand{\rmdefault}{ptm}
 \usepackage[lite,subscriptcorrection,nofontinfo,zswash]{mtpro2}
 
 \usepackage{makeidx}
@@ -161,6 +160,7 @@
 \chapter*{Prerequisites}\label{ID}}
 \addcontentsline{toc}{chapter}{Prerequisites}
 
+\[\sum_1^2=\int_1^2\]
 This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
 
 The \textbf{bookdown} package can be installed from CRAN\index{CRAN} or Github:
@@ -323,10 +323,10 @@ In this section, we give a very brief introduction to Pandoc's Markdown\index{Ma
 \appendix \addcontentsline{toc}{chapter}{\appendixname}}
 
 
-Some \emph{significant} applications are demonstrated in this chapter.
-
 \hypertarget{example-one-1}{%
 \chapter{Example one}\label{example-one-1}}
+
+Some \emph{significant} applications are demonstrated in this chapter.
 
 \hypertarget{example-two-1}{%
 \section{Example two}\label{example-two-1}}
