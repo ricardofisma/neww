@@ -1,3 +1,19 @@
-# Final Words
+# (APPENDIX) Apendice {-}
 
-We have finished a nice book.
+Some _significant_ applications are demonstrated in this chapter.
+
+# Example one
+
+## Example two
+
+## Example twowwwww
+
+# Example onewwwww
+
+# Components
+
+This chapter demonstrates the syntax of common components of a book written in **bookdown**, including code chunks, figures, tables, citations, math theorems, and equations. The approach is based on Pandoc, so we start with the syntax of Pandoc's\index{Pandoc} flavor of Markdown.
+
+## Markdown syntax
+
+In this section, we give a very brief introduction to Pandoc's Markdown\index{Markdown}. Readers who are familiar with Markdown can skip this section. The comprehensive syntax of Pandoc's Markdown can be found on the Pandoc website <http://pandoc.org>.

@@ -270,16 +270,34 @@ Un \emph{incremento} de una variable de un valor númerico a otro, es la \emph{d
 
 Evidentemente el incremento\index{incremento} puede ser engativo o positivo de acuerdo a si la variable aumenta o disminuye.
 
+Sea la función
+
+\begin{equation}
+y=x^2
+\label{eq:r}
+\end{equation}
+sea \(x\) fijo entonces un incremento \(\Delta x\) implica in incremento en \(y\) de \(\Delta y\) se obtiene
+
+\begin{equation}
+y+\Delta y=(x+\Delta x)^2=x^2+2x\Delta x+(\Delta x)^2
+\label{eq:rr}
+\end{equation}
+
+entonces restando \eqref{eq:r} de \eqref{eq:rr} se obtiene el \emph{incremento} \(\Delta y\) en función de \(x\) y \(\Delta x\)
+
+\begin{equation}
+\Delta y=2x\Delta x+(\Delta x)^2
+\label{eq:rrr}
+\end{equation}
+
+Luego la razón de los incrementos se obtiene al dividir por \(\Delta x\) ambos mienbros de \eqref{eq:rrr} \[\frac{\Delta y}{\Delta x}=2x+\Delta x\] entonces el limite en \(x=4\) es \[\lim_{\Delta x\to 0}\frac{\Delta y}{\Delta x}=2\cdot 4+0=8\]
+
+La \emph{dderivada} de una fucnion de una variable
+
 \hypertarget{methods}{%
 \chapter{Methods}\label{methods}}
 
 We describe our methods in this chapter.
-
-\hypertarget{appendix-apendice}{%
-\appendix \addcontentsline{toc}{chapter}{\appendixname}}
-
-
-Some \emph{significant} applications are demonstrated in this chapter.
 
 \hypertarget{example-one}{%
 \chapter{Example one}\label{example-one}}
@@ -303,10 +321,33 @@ This chapter demonstrates the syntax of common components of a book written in \
 
 In this section, we give a very brief introduction to Pandoc's Markdown\index{Markdown}. Readers who are familiar with Markdown can skip this section. The comprehensive syntax of Pandoc's Markdown can be found on the Pandoc website \url{http://pandoc.org}.
 
-\hypertarget{final-words}{%
-\chapter{Final Words}\label{final-words}}
+\hypertarget{appendix-apendice}{%
+\appendix \addcontentsline{toc}{chapter}{\appendixname}}
 
-We have finished a nice book.
+
+Some \emph{significant} applications are demonstrated in this chapter.
+
+\hypertarget{example-one-1}{%
+\chapter{Example one}\label{example-one-1}}
+
+\hypertarget{example-two-1}{%
+\section{Example two}\label{example-two-1}}
+
+\hypertarget{example-twowwwww-1}{%
+\section{Example twowwwww}\label{example-twowwwww-1}}
+
+\hypertarget{example-onewwwww-1}{%
+\chapter{Example onewwwww}\label{example-onewwwww-1}}
+
+\hypertarget{components-1}{%
+\chapter{Components}\label{components-1}}
+
+This chapter demonstrates the syntax of common components of a book written in \textbf{bookdown}, including code chunks, figures, tables, citations, math theorems, and equations. The approach is based on Pandoc, so we start with the syntax of Pandoc's\index{Pandoc} flavor of Markdown.
+
+\hypertarget{markdown-syntax-1}{%
+\section{Markdown syntax}\label{markdown-syntax-1}}
+
+In this section, we give a very brief introduction to Pandoc's Markdown\index{Markdown}. Readers who are familiar with Markdown can skip this section. The comprehensive syntax of Pandoc's Markdown can be found on the Pandoc website \url{http://pandoc.org}.
 
 \bibliography{book.bib,packages.bib}
 
