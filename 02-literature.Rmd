@@ -26,4 +26,21 @@ entonces restando \@ref(eq:r) de \@ref(eq:rr) se obtiene el _incremento_ $\Delta
 Luego la razón de los incrementos se obtiene al dividir por $\Delta x$ ambos mienbros de \@ref(eq:rrr) $$\frac{\Delta y}{\Delta x}=2x+\Delta x$$ entonces el limite en $x=4$ es $$\lim_{\Delta x\to 0}\frac{\Delta y}{\Delta x}=2\cdot 4+0=8$$
 
 
-La _dderivada_ de una fucnion de una variable
+La _derivada_ de una función de una variable
+
+$P(x)=f(a)+{\frac {f'(a)}{1!}}(x-a)+{\frac {f''(a)}{2!}}(x-a)^{2}+{\frac {f'''(a)}{3!}}(x-a)^{3}+\cdots +{\frac {f^{n}(a)}{n!}}(x-a)^{n}$
+
+${\displaystyle e^{x}\approx 1+{\frac {x}{1!}}+{\frac {x^{2}}{2!}}+{\frac {x^{3}}{3!}}+{\frac {x^{4}}{4!}}+{\frac {x^{5}}{5!}}+\cdots }$
+
+
+This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
+
+The **bookdown** package can be installed from CRAN\index{CRAN} or Github:
+
+This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
+
+The **bookdown** package can be installed from CRAN\index{CRAN} or Github:
+
+This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
+
+The **bookdown** package can be installed from CRAN\index{CRAN} or Github:

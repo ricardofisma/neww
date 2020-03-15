@@ -6,12 +6,8 @@ bookdown::gitbook:
       family: serif
       size: 2
     toc:
-      collapsed: true
-      smooth_scroll: true 
-      before: |
-        <li><a href="./">Un libro nuevo</a></li>
-      after: |
-        <li><a href="rilatex.blogspot.com" target="blank">Blogspot</a></li>
+      collapse: section
+      scroll_highlight: yes
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
