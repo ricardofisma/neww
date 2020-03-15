@@ -9,25 +9,20 @@ Un _incremento_ de una variable de un valor númerico a otro, es la _diferencia_
 Evidentemente el incremento\index{incremento} puede ser engativo o positivo de acuerdo a si la variable aumenta o disminuye. 
 
 Sea la función 
-
 \begin{equation}
 y=x^2
 (\#eq:r)
 \end{equation}
 sea $x$ fijo entonces un incremento $\Delta x$ implica in incremento en $y$ de $\Delta y$ se obtiene 
-
 \begin{equation}
 y+\Delta y=(x+\Delta x)^2=x^2+2x\Delta x+(\Delta x)^2
 (\#eq:rr)
 \end{equation}
-
 entonces restando \@ref(eq:r) de \@ref(eq:rr) se obtiene el _incremento_ $\Delta y$ en función de $x$ y $\Delta x$ 
-
 \begin{equation}
 \Delta y=2x\Delta x+(\Delta x)^2
 (\#eq:rrr)
 \end{equation}
-
 Luego la razón de los incrementos se obtiene al dividir por $\Delta x$ ambos mienbros de \@ref(eq:rrr) $$\frac{\Delta y}{\Delta x}=2x+\Delta x$$ entonces el limite en $x=4$ es $$\lim_{\Delta x\to 0}\frac{\Delta y}{\Delta x}=2\cdot 4+0=8$$
 
 

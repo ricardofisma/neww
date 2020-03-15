@@ -10,7 +10,10 @@ link-citations: yes
 description: ""
 ---
 
-# Prerequisites {#ID .unnumbered}
+# Prerequisitos {-}
+
+$f'(x)=\lim _{h\to 0}\frac{f(x+h)-f(x)}{h}$
+
 $$\sum_1^2=\int_1^2$$
 This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
 

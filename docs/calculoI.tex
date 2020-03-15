@@ -99,6 +99,7 @@
 \usepackage[spanish,english]{babel}
 \usepackage{booktabs}
 \usepackage{graphicx}
+\usepackage{amsmath}
 \usepackage{makeidx}
 \makeindex
 \usepackage{imakeidx}
@@ -120,7 +121,6 @@
 \usepackage{makeidx}
 \makeindex
 
-\urlstyle{tt}
 
 \usepackage{amsthm}
 \makeatletter
@@ -149,16 +149,18 @@
 \includegraphics{dedication.pdf}
 \end{center}
 
-\setlength{\abovedisplayskip}{-5pt}
-\setlength{\abovedisplayshortskip}{-5pt}
+%\setlength{\abovedisplayskip}{-5pt}
+%\setlength{\abovedisplayshortskip}{-5pt}
 
 {
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{ID}{%
-\chapter*{Prerequisites}\label{ID}}
-\addcontentsline{toc}{chapter}{Prerequisites}
+\hypertarget{prerequisitos}{%
+\chapter*{Prerequisitos}\label{prerequisitos}}
+\addcontentsline{toc}{chapter}{Prerequisitos}
+
+\(f'(x)=\lim _{h\to 0}\frac{f(x+h)-f(x)}{h}\)
 
 \[\sum_1^2=\int_1^2\]
 This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
@@ -269,25 +271,20 @@ Un \emph{incremento} de una variable de un valor númerico a otro, es la \emph{d
 Evidentemente el incremento\index{incremento} puede ser engativo o positivo de acuerdo a si la variable aumenta o disminuye.
 
 Sea la función
-
 \begin{equation}
 y=x^2
 \label{eq:r}
 \end{equation}
 sea \(x\) fijo entonces un incremento \(\Delta x\) implica in incremento en \(y\) de \(\Delta y\) se obtiene
-
 \begin{equation}
 y+\Delta y=(x+\Delta x)^2=x^2+2x\Delta x+(\Delta x)^2
 \label{eq:rr}
 \end{equation}
-
 entonces restando \eqref{eq:r} de \eqref{eq:rr} se obtiene el \emph{incremento} \(\Delta y\) en función de \(x\) y \(\Delta x\)
-
 \begin{equation}
 \Delta y=2x\Delta x+(\Delta x)^2
 \label{eq:rrr}
 \end{equation}
-
 Luego la razón de los incrementos se obtiene al dividir por \(\Delta x\) ambos mienbros de \eqref{eq:rrr} \[\frac{\Delta y}{\Delta x}=2x+\Delta x\] entonces el limite en \(x=4\) es \[\lim_{\Delta x\to 0}\frac{\Delta y}{\Delta x}=2\cdot 4+0=8\]
 
 La \emph{dderivada} de una fucnion de una variable
