@@ -111,10 +111,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\ExecuteOptions{letterpaper,10pt,twoside,onecolumn,final,openright}
+\ExecuteOptions{a4paper,10pt,twoside,onecolumn,final,openright}
 \ProcessOptions
 
-%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
 
 \def\helv@scale{.82}
 %
